@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="choi" onclick="Choi()">Choi</button>
+<input id="Sodoan" type="number" min="1" max="20" value="">
+<script>
+    var count=0;
+    function Choi() {
+        count++
+        a=document.getElementById("choi").value;
+        b= Math.floor(Math.random() * 20 + 1);
+        if (count<5){
+            if (a==b){
+                alert("ban da doan dung")
+            }else {
+                alert("ban da doan sai, con "+(5-count)+"luot choi")
+            }
+        }else {
+            alert("chu be' dan choi mai khong win.")
+        }
+
+    }
+
+
+
+
+</script>
+</body>
+</html>
